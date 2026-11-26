@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>photo-upload</title>
+<meta name="description" content="photo-upload is a personal tool that backs up one person's self-hosted Immich photo library to Google Photos.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="./">photo-upload</a>
+  <nav><a href="./" aria-current="page">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main><div class="wrap">
+  <h1>photo-upload</h1>
+  <p class="lead">A personal tool that backs up one person's self-hosted Immich photo and video library to Google Photos.</p>
+
+  <div class="card">
+    <p><strong>Personal use only.</strong> photo-upload is written and operated by Xiaofeng Han for his own Google account. It is not offered to the public, there is no sign-up, and it has no other users.</p>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Uploads original photos and videos (converting unsupported formats locally while preserving EXIF timestamps and GPS metadata) from the owner's read-only Immich storage to the owner's Google Photos library.</li>
+    <li>Runs exclusively on the owner's private home server and Mac. There is no hosted cloud service.</li>
+    <li>Displays live upload progress, errors, and bandwidth controls in a local macOS menu bar app.</li>
+  </ul>
+
+  <h2>Access it requests</h2>
+  <ul>
+    <li><strong>Google Photos Library API:</strong> <code>https://www.googleapis.com/auth/photoslibrary.appendonly</code>, used solely to upload media items into the owner's Google Photos timeline without reading or modifying existing cloud items.</li>
+  </ul>
+  <p>How data is handled is described in the <a href="privacy.html">privacy policy</a>. Use is governed by the <a href="terms.html">terms of service</a>.</p>
+</div></main>
+<footer><div class="wrap">photo-upload · personal project · <a href="mailto:hhhanxf@gmail.com">hhhanxf@gmail.com</a></div></footer>
+</body>
+</html>

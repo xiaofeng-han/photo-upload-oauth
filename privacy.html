@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy · photo-upload</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+  <a class="brand" href="./">photo-upload</a>
+  <nav><a href="./">Home</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main><div class="wrap">
+  <h1>Privacy policy</h1>
+  <p class="meta">Effective 25 November 2026</p>
+
+  <div class="card">
+    <p>photo-upload is a personal tool used only by its author, Xiaofeng Han, with his own Google account. This policy explains how the tool handles information accessed or transmitted through Google APIs.</p>
+  </div>
+
+  <h2>Data the tool accesses</h2>
+  <ul>
+    <li>Media files (photos and videos) stored on the owner's self-hosted Immich server, uploaded to the owner's Google Photos library using the append-only scope <code>https://www.googleapis.com/auth/photoslibrary.appendonly</code>.</li>
+    <li>Resumable upload session URLs and upload status responses returned by the Google Photos Library API.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>Solely to upload and deduplicate the owner's personal photos and videos into his own Google Photos account and display upload status on his local network.</li>
+    <li>Temporary format-converted staging files on the owner's home server are deleted immediately after upload completes.</li>
+    <li>No advertising, analytics, profiling, or machine-learning training. Use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</li>
+  </ul>
+
+  <h2>Storage and security</h2>
+  <ul>
+    <li>Upload tracking state (local file paths, hashes, and resumable session offsets) is stored only on the owner's private home server.</li>
+    <li>OAuth client credentials and tokens are stored encrypted on the owner's home server and in the macOS Keychain. They are never stored in plain text in source repositories and are sent only to Google's authentication and upload endpoints.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>No data obtained from or sent through Google APIs is sold, shared with, or transferred to any third party.</p>
+
+  <h2>Retention and deletion</h2>
+  <p>Local upload state is retained while the tool is in use and can be deleted at any time by removing the container state volume on the owner's home server. Google OAuth access can be revoked at any time at <a href="https://myaccount.google.com/permissions">Google account permissions</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:hhhanxf@gmail.com">hhhanxf@gmail.com</a>.</p>
+</div></main>
+<footer><div class="wrap">photo-upload · personal project</div></footer>
+</body>
+</html>
